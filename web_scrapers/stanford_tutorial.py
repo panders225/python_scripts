@@ -30,7 +30,7 @@ letters = soup.find_all("div", class_="ec_statements")
 print type(letters)
 
 letters[0]
-
+letters[0].a.get_text()
 lobbying = {}
 for element in letters:
     lobbying[element.a.get_text()] = {}
